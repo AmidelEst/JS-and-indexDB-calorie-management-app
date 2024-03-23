@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		monthSelector.addEventListener('change', getReportByMonthAndYear);
 		yearSelector.addEventListener('change', getReportByMonthAndYear);
 		fillYearDropdown();
+		// Initially hide the month and year selectors
+		dateSelectors.style.display = 'none';
 	}
 
 	// change state when entering monthly report
@@ -177,6 +179,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				listItem.className = 'list-group-item';
 				listItem.textContent = `Description: ${entry.description}, Calories: ${entry.calorie}, Category: ${entry.category}, Date: ${entry.date}`;
 				list.appendChild(listItem);
+				// Reset text color to default if there are records
+				reportArea.style.color = '';
 			});
 			reportArea.appendChild(list);
 		} else {

@@ -26,11 +26,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="index.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body style="color: rgba(2, 67, 233, 0.808);">
 
     <!-- Add Record Modal -->
     <div class="modal fade" id="addRecordModal" tabindex="-1" aria-labelledby="addRecordModalLabel">
@@ -76,43 +75,47 @@
             </div>
         </div>
     </div>
-
     <div class="container mt-5">
-
         <h1>Calorie Reports</h1>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addRecordModal">
-            Add New Record
-        </button>
-
-        <button type="button" class="btn btn-outline-primary my-2" id="monthlyReportBtn">
-            Monthly Report
-        </button>
-        <!-- Dropdown for selecting month and year -->
-        <div class="row mb-3" id="dateSelectors" style="display: none;">
-            <div class="col">
-                <select class="form-control" id="monthSelector">
-                    <option value="1">January</option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                    <option value="5">May</option>
-                    <option value="6">June</option>
-                    <option value="7">July</option>
-                    <option value="8">August</option>
-                    <option value="9">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                </select>
+        <div class="row row-cols-3"> <!-- Use a row to contain your elements -->
+            <div class="col"> <!-- Each button and dropdown gets its own column -->
+                <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#addRecordModal">
+                    Add New Record
+                </button>
             </div>
             <div class="col">
-                <select class="form-control" id="yearSelector">
-                    <!-- Dynamically filled with JavaScript -->
-                </select>
+                <button type="button" class="btn btn-outline-primary w-100" id="monthlyReportBtn">
+                    Monthly Report
+                </button>
+            </div>
+            <div id="dateSelectors">
+                <div class="col d-flex">
+                    <div class="col">
+                        <select class="form-control p-2" id="yearSelector">
+                            <!-- Dynamically filled with JavaScript -->
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-control p-2" id="monthSelector">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Report Display Area -->
-        <div id="reportArea"></div>
+        <div id="reportArea" class="mt-3"></div>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
