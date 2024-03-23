@@ -186,7 +186,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				list.appendChild(listItem);
 			});
 			reportArea.appendChild(list);
+			// Reset text color to default if there are records
+			reportArea.style.color = '';
 		} else {
+			// Set text color to white and display 'No recogit push –u originrds found'.
+			reportArea.style.color = 'white';
 			reportArea.textContent = 'No records found.';
 		}
 	}
