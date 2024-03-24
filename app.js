@@ -184,6 +184,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 			reportArea.appendChild(list);
 		} else {
+			// Set text color to white and display
+			reportArea.style.color = 'white';
 			reportArea.textContent = 'No records found.';
 		}
 	}

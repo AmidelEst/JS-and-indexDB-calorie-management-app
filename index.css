@@ -1,0 +1,54 @@
+/* General Body Styling */
+body {
+	background-color: #f8f9fa;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #1377e2;
+}
+
+/* Modal Customizations */
+.modal-header {
+	background-color: #007bff;
+	color: #eee;
+}
+
+.modal-footer {
+	background-color: #f1f1f1;
+}
+
+.modal-content {
+	border-radius: 0.5rem;
+}
+
+/* Button Customizations */
+.btn-primary {
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+	border-color: #0056b3;
+}
+
+/* Report Display Enhancements */
+#reportArea {
+	background-color: #007bff;
+	border: 1px solid #4652f6;
+	padding: 1px;
+	border-radius: 0.25rem;
+	margin-top: 2px;
+}
+
+h1 {
+	text-align: left;
+	color: #048dfd;
+}
+
+/* Utility Classes */
+.mt-5 {
+	margin-top: 3rem !important;
+}
+
+.mb-3 {
+	margin-bottom: 1rem !important;
+}
