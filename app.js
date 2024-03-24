@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	// display Specific calorie items, based on selections
 	function getReportByMonthAndYear() {
-		const shouldGetMonthlyReport = dateSelectors.style.display === 'block';
+		dateSelectors.style.display === 'block';
 
 		const month = isMonthlyReport
 			? parseInt(monthSelector.value, 10)
